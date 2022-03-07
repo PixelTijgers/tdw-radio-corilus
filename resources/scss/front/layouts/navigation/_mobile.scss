@@ -1,0 +1,13 @@
+:root {
+    --navigation-height-mobile: 60px;
+}
+.front-layouts-navigation-Mobile {
+    background: var(--clr-white-100);
+    height: var(--navigation-height-mobile);
+
+    figure {
+        img {
+            height: 100%;
+        }
+    }
+}

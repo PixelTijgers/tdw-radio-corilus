@@ -1,0 +1,43 @@
+:root {
+    --mm-color-background: var(--clr-white-100);
+}
+
+.mm-panels {
+    background: var(--mm-color-background);
+    border-color: var(--mm-color-border);
+    color: var(--mm-color-text);
+
+    .mm-navbar {
+        color: var(--clr-green-300);
+        font-family: var(--ff-head);
+        font-size: 24px;
+    }
+
+    .mm-listview {
+        .mm-listitem {
+            font-family: var(--ff-head);
+            font-size: 18px;
+
+            &:after {
+                left: 0;
+            }
+
+            a {
+                color: var(--clr-green-300);
+
+                &.active {
+                    background: var(--clr-green-300) !important;
+                    color: var(--clr-white-100) !important;
+                }
+            }
+        }
+
+        .mm-listitem {
+            &:last-of-type {
+                &:after {
+                    border: transparent !important;
+                }
+            }
+        }
+    }
+}

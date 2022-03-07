@@ -1,0 +1,50 @@
+:root {
+    --navigation-height: 80px;
+}
+
+.front-layouts-navigation-Desktop {
+    height: var(--navigation-height);
+
+    figure {
+        img {
+            height: var(--navigation-height);
+            width: 100%;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                font-family: var(--ff-head);
+                font-size: 18px;
+                margin-left: 10px;
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+
+                a {
+                    border-radius: 5px;
+                    color: var(--clr-black-400);
+                    padding: 7px 10px;
+                    transition: all .30s ease-out;
+
+                    &:hover {
+                        color: var(--clr-green-300);
+                    }
+                    &.active {
+                        background: linear-gradient(135deg, rgba(0,192,242,1) 0%, rgba(13,177,75,1) 100%);
+                        color: #FFF;
+                    }
+
+                    &.switcher {
+                        &:hover,
+                        &.active {
+                            background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

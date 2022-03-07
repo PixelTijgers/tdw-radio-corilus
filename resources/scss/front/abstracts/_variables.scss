@@ -1,0 +1,20 @@
+@use '../abstracts/colors' as *;
+
+// Define the variables.
+:root {
+    // Set the color variables.
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}
+
+// Set classes with the color variables.
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+        .clr-#{$color}-#{$shade} {
+            color: $value;
+        }
+    }
+}
